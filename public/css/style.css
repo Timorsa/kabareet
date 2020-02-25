@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* body {
+  background-color: #000;
+  height: 100vh;
+  font-family: poppins;
+}
+
+* body .overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #ecf0f3;
+  top: 0%;
+}
+
+* body .overlay .overlay-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("../assets/kabareet.svg");
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+* body .round-obj {
+  border-radius: 50%;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .logo {
+  margin: 25px auto;
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/kabareet.svg");
+  background-repeat: no-repeat;
+  background-size: center;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.navbar .nav {
+  margin: 0 auto;
+  padding: 0 25px 25px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .nav .nav-link {
+  text-decoration: none;
+  color: #ecf0f3;
+  font-size: 1.6rem;
+  -webkit-transition: all 1.8s ease-in-out;
+  transition: all 1.8s ease-in-out;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  padding: 25px;
+}
+
+.container .about {
+  margin: 0 auto;
+  position: relative;
+  top: 55px;
+  width: 80%;
+  color: #ecf0f3;
+}
+
+.container .about h2 {
+  margin: 25px 0;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.container .about p {
+  padding: 25px;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.container .about strong {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
