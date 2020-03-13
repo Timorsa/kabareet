@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/assets/kabareet.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/kabareet.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>K a b a r e e t</title>
-  </head>
-  <body>
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"
-    ></script>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <div id="root"></div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-  <script src="./js/tweens.js"></script>
-  <!--kursor js-->
-  <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-  <script src="./js/kursor.js"></script>
+		<title>Kabareet</title>
+	</head>
+	<body>
+		<video autoplay muted loop id="myVideo">
+			<source src="kb-bg-bw.mp4" type="video/mp4" />
+		</video>
+		<div id="root"></div>
+	</body>
+	<style>
+		#myVideo {
+			z-index: -1;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			filter: blur(15px);
+			filter: brightness(0.4);
+		}
+	</style>
 </html>

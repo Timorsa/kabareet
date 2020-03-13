@@ -1,0 +1,47 @@
+.navbar {
+	width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+	.logo {
+		margin: 20px 0;
+		height: 220px;
+		width: 220px;
+		align-self: center;
+		background-image: url('../assets/kabareet.svg');
+		background-repeat: no-repeat;
+		background-size: center;
+		filter: invert(100%);
+		position: relative;
+		right: 25px;
+	}
+	.nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		.nav-itm {
+			font-size: 1.4rem;
+			text-decoration: none;
+			color: $smokey;
+			text-transform: uppercase;
+			position: relative;
+			top: -60px;
+			&:after {
+				background: none repeat scroll 0 0 transparent;
+				bottom: 0;
+				content: '';
+				display: block;
+				height: 2px;
+				left: 50%;
+				position: absolute;
+				background: $smokey;
+				transition: width 0.3s ease 0s, left 0.3s ease 0s;
+				width: 0;
+			}
+			&:hover:after {
+				width: 105%;
+				left: -2.5%;
+			}
+		}
+	}
+}

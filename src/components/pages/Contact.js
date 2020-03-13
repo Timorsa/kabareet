@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Events = () => {
+const Contact = () => {
 	return <div></div>;
 };
 
-export default Events;
+export default Contact;

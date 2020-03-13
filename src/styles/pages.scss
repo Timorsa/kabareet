@@ -1,0 +1,131 @@
+.about {
+	width: 70vw;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	color: $smokey;
+	margin: 0 auto;
+
+	h2 {
+		margin: 20px 0;
+		font-size: 2rem;
+		overflow: hidden;
+		span {
+			position: relative;
+		}
+	}
+	p {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		overflow: hidden;
+		span {
+			position: relative;
+		}
+	}
+	.down-sc {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.2rem;
+		opacity: 1;
+		a {
+			color: $smokey;
+		}
+	}
+}
+
+.about-more {
+	height: 100vh;
+	position: absolute;
+	top: 0%;
+	z-index: 100;
+	background: $smokey;
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	// overflow-y: scroll;
+	overflow-y: auto;
+	overflow: -moz-scrollbars-none;
+	&::-webkit-scrollbar {
+		width: 0 !important;
+	}
+	@include media('<=tablet') {
+		width: 100vw;
+	}
+	.am-header {
+		width: 100%;
+		// border-bottom: 0.1px solid #000000;
+		a {
+			color: $ash;
+			text-decoration: none;
+		}
+	}
+	.am-content {
+		.am-title {
+			font-size: 5rem;
+			font-family: 'Anton', sans-serif;
+			display: inline;
+			position: relative;
+			left: 40px;
+			top: 25px;
+			height: 300px;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			span {
+				position: relative;
+			}
+			.title-name {
+				display: inline;
+				overflow: hidden;
+			}
+			.title-residence {
+				display: inline;
+				color: $g-red;
+				margin-left: 80px;
+				overflow: hidden;
+			}
+			.title-img {
+				width: 70%;
+				height: 300px;
+				position: relative;
+				top: -100px;
+				right: 15px;
+				background-image: url('../assets/kb-p1.jpg');
+				background-position: center;
+			}
+		}
+		.am-body {
+			position: relative;
+			top: -50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.am-c-p1 {
+				height: 90vh;
+				width: 350px;
+				margin-left: 10px;
+
+				background-image: url('../assets/kb-p1.jpg');
+				background-position: center;
+			}
+			p {
+				position: relative;
+				top: 50px;
+				display: inline;
+				font-size: 1.4rem;
+				width: 350px;
+				font-family: poppins;
+			}
+			.am-c-p2 {
+				width: 550px;
+				margin-right: 10px;
+				background-image: url('../assets/kb-p1.jpg');
+				background-position: center;
+			}
+			.b-pic {
+				position: relative;
+			}
+		}
+	}
+}
