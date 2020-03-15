@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
 	useEffect(() => {
 		gsap.from('.logo', 1, {
-			// delay: 2.2,
+			//delay: 2.2,
 			opacity: 0,
 			y: 20,
 			ease: 'Expo.easeInOut'
 		});
 
 		gsap.from('.nav-itm', 1.2, {
-			// delay: 2.2,
+			//delay: 2.2,
 			opacity: 0,
 			y: 15,
 			ease: 'Expo.easeInOut',

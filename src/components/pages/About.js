@@ -26,7 +26,7 @@ export const About = () => {
 			right: '1500px',
 			ease: 'Expo.easeInOut',
 			stagger: {
-				amount: 0.4
+				amount: 0.8
 			}
 		});
 		gsap.from('.down-sc ', 1.2, {
@@ -59,8 +59,12 @@ export const About = () => {
 				<br />{' '}
 				<span>
 					Kabareet hosts local and international music concerts, as well as
-					promoting underground DJs and alternative music. Brought to safe to
-					sustain culture freedom for artists in a post-gentrified environment.
+					promoting underground DJs and alternative music.
+				</span>
+				<br />
+				<span>
+					Brought to safe to sustain culture freedom for artists in a
+					post-gentrified environment.
 				</span>
 				<br />
 				<span>
